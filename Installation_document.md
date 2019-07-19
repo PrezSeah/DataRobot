@@ -41,9 +41,10 @@ In production you use another link: https://APPNAME.herokuapp.com/login/github/a
  OAUTHLIB_INSECURE_TRANSPORT=true
  
  FLASK_SECRET_KEY=YOU_SHOULD_INSERT_YOUR_VALUE_HERE<br/>
-Use the following command to quickly generate a value for app.secret_key:
-`python -c 'import os; print(os.urandom(16))'`. Instead of '16', you can use any value you want.<br/>
-In the output you will get something like this, it will be your FLASK_SECRET_KEY:
+Use the following command to quickly generate a value for app.secret_key:<br/>
+`python -c 'import os; print(os.urandom(16))'` <br/>
+Instead of '16', you can use any value you want.<br/>
+In the output you will get something like this, it will be your FLASK_SECRET_KEY:<br/>
 `b'_5#y2L"F4Q8z\n\xec]/'`
 
  GITHUB_USERNAME=asyaaaa17
