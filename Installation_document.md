@@ -36,6 +36,21 @@ In production you use another link: https://APPNAME.herokuapp.com/login/github/a
  ![alt](./images/Run_Debug_Conf.png)
  ![alt](./images/environment_variables.png)
  
+ GITHUB_OAUTH_CLIENT_ID=YOU_SHOULD_INSERT_YOUR_VALUE_HERE
+ GITHUB_OAUTH_CLIENT_SECRET=YOU_SHOULD_INSERT_YOUR_VALUE_HERE
+ OAUTHLIB_INSECURE_TRANSPORT=true
+ 
+ FLASK_SECRET_KEY=YOU_SHOULD_INSERT_YOUR_VALUE_HERE<br/>
+Use the following command to quickly generate a value for app.secret_key:
+`python -c 'import os; print(os.urandom(16))'`. Instead of '16', you can use any value you want.<br/>
+In the output you will get something like this, it will be your FLASK_SECRET_KEY:
+`b'_5#y2L"F4Q8z\n\xec]/'`
+
+ GITHUB_USERNAME=asyaaaa17
+ REPOSITORY_NAME=DataRobot<br/>
+ Instead of these values, you can insert your own username and your own repo name,
+ if you want to let people replicate your public repo.
+ 
  - run `flask run` in your terminal OR use the Run button ![alt](./images/run_button.png), go to http://127.0.0.1:5000/
  - If everything is alright, you will see authentication GitHub page and than the success page in your browser.
   
